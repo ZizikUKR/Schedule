@@ -1,0 +1,8 @@
+2020-01-17T10:40:28.6957431+02:00 8000000e-0005-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2.0 GET https://localhost:44367/swagger/index.html   (ca22a1cb)
+2020-01-17T10:40:28.8776019+02:00 8000000e-0005-fd00-b63f-84710c7967bb [INF] Request finished in 187.7114ms 200 text/html;charset=utf-8 (791a596a)
+2020-01-17T10:40:29.0701327+02:00 80000016-0001-f800-b63f-84710c7967bb [INF] Request starting HTTP/2.0 GET https://localhost:44367/swagger/v1/swagger.json   (ca22a1cb)
+2020-01-17T10:40:29.1718813+02:00 80000016-0001-f800-b63f-84710c7967bb [INF] Request finished in 99.9357ms 200 application/json;charset=utf-8 (791a596a)
+2020-01-17T10:41:13.5382651+02:00 80000010-0005-fd00-b63f-84710c7967bb [INF] Request starting HTTP/2.0 GET https://localhost:44367/swagger/index.html   (ca22a1cb)
+2020-01-17T10:41:13.7083022+02:00 80000010-0005-fd00-b63f-84710c7967bb [INF] Request finished in 176.4074ms 200 text/html;charset=utf-8 (791a596a)
+2020-01-17T10:41:13.8101147+02:00 80000056-0002-ff00-b63f-84710c7967bb [INF] Request starting HTTP/2.0 GET https://localhost:44367/swagger/v1/swagger.json   (ca22a1cb)
+2020-01-17T10:41:13.8956735+02:00 80000056-0002-ff00-b63f-84710c7967bb [INF] Request finished in 84.9326ms 200 application/json;charset=utf-8 (791a596a)

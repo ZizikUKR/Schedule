@@ -1,8 +1,8 @@
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"], {
   /***/
@@ -36,26 +36,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/activity/activity.component.html":
-  /*!****************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/activity/activity.component.html ***!
-    \****************************************************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppActivityActivityComponentHtml(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "<p>activity works!</p>\n";
-    /***/
-  },
-
-  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html":
   /*!**************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/app.component.html ***!
@@ -71,7 +51,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<!-- <app-header></app-header> -->\nsdgsd\n<router-outlet></router-outlet>";
+    __webpack_exports__["default"] = "\n <app-header></app-header> \n\n<router-outlet></router-outlet>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/activity/activity.component.html":
+  /*!**************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/activity/activity.component.html ***!
+    \**************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppDashboardActivityActivityComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<p>activity works!</p>\n";
     /***/
   },
 
@@ -91,7 +91,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>dashboard works!</p>\n\n<div>\n    <app-activity></app-activity>\n</div>\n<div>\n    <app-home-builder></app-home-builder>\n</div>";
+    __webpack_exports__["default"] = "<p>dashboard works!</p>\n\n<div>\n    <app-activity></app-activity>\n</div>  \n<div>\n    <app-home-builder></app-home-builder>\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/home-builder/home-builder.component.html":
+  /*!**********************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/home-builder/home-builder.component.html ***!
+    \**********************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppDashboardHomeBuilderHomeBuilderComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<p>home-builder works!</p>\n";
     /***/
   },
 
@@ -111,27 +131,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>header works!</p>\n";
+    __webpack_exports__["default"] = "<p>header works!</p>\n<div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">\n    <button type=\"button\"  class=\"btn btn-secondary\" (click)=\"navigateToDashBoard()\">DashBoard</button>\n    <button type=\"button\" class=\"btn btn-secondary\" (click)=\"navigateToProjets()\" >Projects</button>\n    <button type=\"button\" class=\"btn btn-secondary\" (click)=\"navigateToToolShelf()\">ToolShelf</button>\n    <button type=\"button\" class=\"btn btn-secondary\" (click)=\"navigateToProjets()\">NetWork</button>\n  </div>";
     /***/
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/home-builder/home-builder.component.html":
-  /*!************************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/home-builder/home-builder.component.html ***!
-    \************************************************************************************************/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/projects/projects.component.html":
+  /*!****************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/projects/projects.component.html ***!
+    \****************************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppHomeBuilderHomeBuilderComponentHtml(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesRawLoaderDistCjsJsSrcAppProjectsProjectsComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>home-builder works!</p>\n";
+    __webpack_exports__["default"] = "<p>projects works!</p>\n";
     /***/
   },
 
@@ -694,162 +714,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-  "./src/app/activity/activity.component.scss":
-  /*!**************************************************!*\
-    !*** ./src/app/activity/activity.component.scss ***!
-    \**************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function srcAppActivityActivityComponentScss(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FjdGl2aXR5L2FjdGl2aXR5LmNvbXBvbmVudC5zY3NzIn0= */";
-    /***/
-  },
-
-  /***/
-  "./src/app/activity/activity.component.ts":
-  /*!************************************************!*\
-    !*** ./src/app/activity/activity.component.ts ***!
-    \************************************************/
-
-  /*! exports provided: ActivityComponent */
-
-  /***/
-  function srcAppActivityActivityComponentTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "ActivityComponent", function () {
-      return ActivityComponent;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-
-    var ActivityComponent =
-    /*#__PURE__*/
-    function () {
-      function ActivityComponent() {
-        _classCallCheck(this, ActivityComponent);
-      }
-
-      _createClass(ActivityComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {}
-      }]);
-
-      return ActivityComponent;
-    }();
-
-    ActivityComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-activity',
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./activity.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/activity/activity.component.html")).default,
-      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./activity.component.scss */
-      "./src/app/activity/activity.component.scss")).default]
-    })], ActivityComponent);
-    /***/
-  },
-
-  /***/
-  "./src/app/app-routing.module.ts":
-  /*!***************************************!*\
-    !*** ./src/app/app-routing.module.ts ***!
-    \***************************************/
-
-  /*! exports provided: AppRoutingModule */
-
-  /***/
-  function srcAppAppRoutingModuleTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function () {
-      return AppRoutingModule;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/router */
-    "./node_modules/@angular/router/fesm2015/router.js");
-    /* harmony import */
-
-
-    var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./app.component */
-    "./src/app/app.component.ts");
-    /* harmony import */
-
-
-    var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ./dashboard/dashboard.component */
-    "./src/app/dashboard/dashboard.component.ts");
-
-    var routes = [{
-      path: '',
-      component: _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
-      data: {
-        title: 'Affiliates'
-      },
-      children: [{
-        path: '',
-        redirectTo: 'dashboard',
-        pathMatch: 'full'
-      }, {
-        path: 'dashboard',
-        component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_4__["DashboardComponent"]
-      }]
-    }];
-
-    var AppRoutingModule = function AppRoutingModule() {
-      _classCallCheck(this, AppRoutingModule);
-    };
-
-    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
-      exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
-    })], AppRoutingModule);
-    /***/
-  },
-
-  /***/
   "./src/app/app.component.scss":
   /*!************************************!*\
     !*** ./src/app/app.component.scss ***!
@@ -947,21 +811,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    var _dashboard_dashboard_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./dashboard/dashboard.module */
+    "./src/app/dashboard/dashboard.module.ts");
+    /* harmony import */
+
+
+    var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/platform-browser */
     "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
     /* harmony import */
 
 
-    var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _app_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./app-routing.module */
-    "./src/app/app-routing.module.ts");
     /* harmony import */
 
 
@@ -977,32 +841,111 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-    /*! ./dashboard/dashboard.component */
-    "./src/app/dashboard/dashboard.component.ts");
+    var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
     /* harmony import */
 
 
-    var _activity_activity_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
-    /*! ./activity/activity.component */
-    "./src/app/activity/activity.component.ts");
-    /* harmony import */
+    var _projects_projects_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./projects/projects.module */
+    "./src/app/projects/projects.module.ts");
 
-
-    var _home_builder_home_builder_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
-    /*! ./home-builder/home-builder.component */
-    "./src/app/home-builder/home-builder.component.ts");
+    var routes = [{
+      path: '',
+      redirectTo: '/dashboard',
+      pathMatch: 'full'
+    }];
 
     var AppModule = function AppModule() {
       _classCallCheck(this, AppModule);
     };
 
-    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"], _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_6__["DashboardComponent"], _activity_activity_component__WEBPACK_IMPORTED_MODULE_7__["ActivityComponent"], _home_builder_home_builder_component__WEBPACK_IMPORTED_MODULE_8__["HomeBuilderComponent"]],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]],
+    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_3__["NgModule"])({
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _header_header_component__WEBPACK_IMPORTED_MODULE_5__["HeaderComponent"]],
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _dashboard_dashboard_module__WEBPACK_IMPORTED_MODULE_1__["DashboardModule"], _projects_projects_module__WEBPACK_IMPORTED_MODULE_7__["ProjectsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_6__["RouterModule"].forRoot(routes)],
       providers: [],
       bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })], AppModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/dashboard/activity/activity.component.scss":
+  /*!************************************************************!*\
+    !*** ./src/app/dashboard/activity/activity.component.scss ***!
+    \************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppDashboardActivityActivityComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Rhc2hib2FyZC9hY3Rpdml0eS9hY3Rpdml0eS5jb21wb25lbnQuc2NzcyJ9 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/dashboard/activity/activity.component.ts":
+  /*!**********************************************************!*\
+    !*** ./src/app/dashboard/activity/activity.component.ts ***!
+    \**********************************************************/
+
+  /*! exports provided: ActivityComponent */
+
+  /***/
+  function srcAppDashboardActivityActivityComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ActivityComponent", function () {
+      return ActivityComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var ActivityComponent =
+    /*#__PURE__*/
+    function () {
+      function ActivityComponent() {
+        _classCallCheck(this, ActivityComponent);
+      }
+
+      _createClass(ActivityComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return ActivityComponent;
+    }();
+
+    ActivityComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-activity',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./activity.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/activity/activity.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./activity.component.scss */
+      "./src/app/dashboard/activity/activity.component.scss")).default]
+    })], ActivityComponent);
     /***/
   },
 
@@ -1086,6 +1029,206 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/dashboard/dashboard.module.ts":
+  /*!***********************************************!*\
+    !*** ./src/app/dashboard/dashboard.module.ts ***!
+    \***********************************************/
+
+  /*! exports provided: DashboardModule */
+
+  /***/
+  function srcAppDashboardDashboardModuleTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DashboardModule", function () {
+      return DashboardModule;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _dashboard_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./dashboard.component */
+    "./src/app/dashboard/dashboard.component.ts");
+    /* harmony import */
+
+
+    var _dashboard_routing__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./dashboard.routing */
+    "./src/app/dashboard/dashboard.routing.ts");
+    /* harmony import */
+
+
+    var _activity_activity_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./activity/activity.component */
+    "./src/app/dashboard/activity/activity.component.ts");
+    /* harmony import */
+
+
+    var _home_builder_home_builder_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ./home-builder/home-builder.component */
+    "./src/app/dashboard/home-builder/home-builder.component.ts");
+
+    var DashboardModule = function DashboardModule() {
+      _classCallCheck(this, DashboardModule);
+    };
+
+    DashboardModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      declarations: [_dashboard_component__WEBPACK_IMPORTED_MODULE_3__["DashboardComponent"], _activity_activity_component__WEBPACK_IMPORTED_MODULE_5__["ActivityComponent"], _home_builder_home_builder_component__WEBPACK_IMPORTED_MODULE_6__["HomeBuilderComponent"]],
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _dashboard_routing__WEBPACK_IMPORTED_MODULE_4__["DashboardRoutes"]]
+    })], DashboardModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/dashboard/dashboard.routing.ts":
+  /*!************************************************!*\
+    !*** ./src/app/dashboard/dashboard.routing.ts ***!
+    \************************************************/
+
+  /*! exports provided: DashboardRoutes */
+
+  /***/
+  function srcAppDashboardDashboardRoutingTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "DashboardRoutes", function () {
+      return DashboardRoutes;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _dashboard_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./dashboard.component */
+    "./src/app/dashboard/dashboard.component.ts");
+
+    var routes = [{
+      path: 'dashboard',
+      component: _dashboard_component__WEBPACK_IMPORTED_MODULE_2__["DashboardComponent"]
+    }];
+
+    var DashboardRoutes = _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild(routes);
+    /***/
+
+  },
+
+  /***/
+  "./src/app/dashboard/home-builder/home-builder.component.scss":
+  /*!********************************************************************!*\
+    !*** ./src/app/dashboard/home-builder/home-builder.component.scss ***!
+    \********************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppDashboardHomeBuilderHomeBuilderComponentScss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Rhc2hib2FyZC9ob21lLWJ1aWxkZXIvaG9tZS1idWlsZGVyLmNvbXBvbmVudC5zY3NzIn0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/dashboard/home-builder/home-builder.component.ts":
+  /*!******************************************************************!*\
+    !*** ./src/app/dashboard/home-builder/home-builder.component.ts ***!
+    \******************************************************************/
+
+  /*! exports provided: HomeBuilderComponent */
+
+  /***/
+  function srcAppDashboardHomeBuilderHomeBuilderComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "HomeBuilderComponent", function () {
+      return HomeBuilderComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var HomeBuilderComponent =
+    /*#__PURE__*/
+    function () {
+      function HomeBuilderComponent() {
+        _classCallCheck(this, HomeBuilderComponent);
+      }
+
+      _createClass(HomeBuilderComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return HomeBuilderComponent;
+    }();
+
+    HomeBuilderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-home-builder',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./home-builder.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/dashboard/home-builder/home-builder.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./home-builder.component.scss */
+      "./src/app/dashboard/home-builder/home-builder.component.scss")).default]
+    })], HomeBuilderComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/header/header.component.scss":
   /*!**********************************************!*\
     !*** ./src/app/header/header.component.scss ***!
@@ -1136,21 +1279,55 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var HeaderComponent =
     /*#__PURE__*/
     function () {
-      function HeaderComponent() {
+      function HeaderComponent(router) {
         _classCallCheck(this, HeaderComponent);
+
+        this.router = router;
       }
 
       _createClass(HeaderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "navigateToProjets",
+        value: function navigateToProjets() {
+          this.router.navigateByUrl('/projects');
+        }
+      }, {
+        key: "navigateToDashBoard",
+        value: function navigateToDashBoard() {
+          this.router.navigateByUrl('/dashboard');
+        }
+      }, {
+        key: "navigateToToolShelf",
+        value: function navigateToToolShelf() {
+          this.router.navigateByUrl('/tool-shelf');
+        }
+      }, {
+        key: "navigateToToolNetWork",
+        value: function navigateToToolNetWork() {
+          this.router.navigateByUrl('/network');
+        }
       }]);
 
       return HeaderComponent;
     }();
+
+    HeaderComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }];
+    };
 
     HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-header',
@@ -1165,43 +1342,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
-  "./src/app/home-builder/home-builder.component.scss":
-  /*!**********************************************************!*\
-    !*** ./src/app/home-builder/home-builder.component.scss ***!
-    \**********************************************************/
+  "./src/app/projects/projects.component.scss":
+  /*!**************************************************!*\
+    !*** ./src/app/projects/projects.component.scss ***!
+    \**************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function srcAppHomeBuilderHomeBuilderComponentScss(module, __webpack_exports__, __webpack_require__) {
+  function srcAppProjectsProjectsComponentScss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2hvbWUtYnVpbGRlci9ob21lLWJ1aWxkZXIuY29tcG9uZW50LnNjc3MifQ== */";
+    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Byb2plY3RzL3Byb2plY3RzLmNvbXBvbmVudC5zY3NzIn0= */";
     /***/
   },
 
   /***/
-  "./src/app/home-builder/home-builder.component.ts":
-  /*!********************************************************!*\
-    !*** ./src/app/home-builder/home-builder.component.ts ***!
-    \********************************************************/
+  "./src/app/projects/projects.component.ts":
+  /*!************************************************!*\
+    !*** ./src/app/projects/projects.component.ts ***!
+    \************************************************/
 
-  /*! exports provided: HomeBuilderComponent */
+  /*! exports provided: ProjectsComponent */
 
   /***/
-  function srcAppHomeBuilderHomeBuilderComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppProjectsProjectsComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "HomeBuilderComponent", function () {
-      return HomeBuilderComponent;
+    __webpack_require__.d(__webpack_exports__, "ProjectsComponent", function () {
+      return ProjectsComponent;
     });
     /* harmony import */
 
@@ -1215,32 +1392,155 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
 
-    var HomeBuilderComponent =
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+
+    var ProjectsComponent =
     /*#__PURE__*/
     function () {
-      function HomeBuilderComponent() {
-        _classCallCheck(this, HomeBuilderComponent);
+      function ProjectsComponent(router) {
+        _classCallCheck(this, ProjectsComponent);
+
+        this.router = router;
       }
 
-      _createClass(HomeBuilderComponent, [{
+      _createClass(ProjectsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
       }]);
 
-      return HomeBuilderComponent;
+      return ProjectsComponent;
     }();
 
-    HomeBuilderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-home-builder',
+    ProjectsComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }];
+    };
+
+    ProjectsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-projects',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./home-builder.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/home-builder/home-builder.component.html")).default,
+      /*! raw-loader!./projects.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/projects/projects.component.html")).default,
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./home-builder.component.scss */
-      "./src/app/home-builder/home-builder.component.scss")).default]
-    })], HomeBuilderComponent);
+      /*! ./projects.component.scss */
+      "./src/app/projects/projects.component.scss")).default]
+    })], ProjectsComponent);
     /***/
+  },
+
+  /***/
+  "./src/app/projects/projects.module.ts":
+  /*!*********************************************!*\
+    !*** ./src/app/projects/projects.module.ts ***!
+    \*********************************************/
+
+  /*! exports provided: ProjectsModule */
+
+  /***/
+  function srcAppProjectsProjectsModuleTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ProjectsModule", function () {
+      return ProjectsModule;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _projects_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ./projects.component */
+    "./src/app/projects/projects.component.ts");
+    /* harmony import */
+
+
+    var _projects_routing__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ./projects.routing */
+    "./src/app/projects/projects.routing.ts");
+
+    var ProjectsModule = function ProjectsModule() {
+      _classCallCheck(this, ProjectsModule);
+    };
+
+    ProjectsModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+      declarations: [_projects_component__WEBPACK_IMPORTED_MODULE_3__["ProjectsComponent"]],
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"], _projects_routing__WEBPACK_IMPORTED_MODULE_4__["ProjectsRoutes"]]
+    })], ProjectsModule);
+    /***/
+  },
+
+  /***/
+  "./src/app/projects/projects.routing.ts":
+  /*!**********************************************!*\
+    !*** ./src/app/projects/projects.routing.ts ***!
+    \**********************************************/
+
+  /*! exports provided: ProjectsRoutes */
+
+  /***/
+  function srcAppProjectsProjectsRoutingTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ProjectsRoutes", function () {
+      return ProjectsRoutes;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _projects_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./projects.component */
+    "./src/app/projects/projects.component.ts");
+
+    var routes = [{
+      path: 'projects',
+      component: _projects_component__WEBPACK_IMPORTED_MODULE_2__["ProjectsComponent"]
+    }];
+
+    var ProjectsRoutes = _angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forChild(routes);
+    /***/
+
   },
 
   /***/
@@ -1352,7 +1652,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\Anuitex-134\source\Homebuilder.WEB\Homebuilder.WEB\angular\src\main.ts */
+    /*! C:\Users\Anuitex-134\source\Homebuilder.WEB\Homebuilder.WEB\client\src\main.ts */
     "./src/main.ts");
     /***/
   }
