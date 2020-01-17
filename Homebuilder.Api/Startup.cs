@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Homebuilder.Api.Middlewares;
+using Homebuilder.Domain.Config;
+using Homebuilder.Domain.Providers;
 using Homebuilder.Domain.Repositories;
 using Homebuilder.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
@@ -41,7 +43,7 @@ namespace Homebuilder.Api
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory,IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
@@ -52,6 +54,8 @@ namespace Homebuilder.Api
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            StaticServiceProvider.SetServiceProvider(serviceProvider);
+
             loggerFactory.AddFile(Configuration.GetSection("Logging"));
             app.UseHttpStatusCodeExceptionMiddleware();
             app.UseCors("OriginPolicy");
@@ -62,6 +66,7 @@ namespace Homebuilder.Api
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Homebuilder API");
             });
+            InitializerDB.Initialize();
         }
 
         public static void ConfigureCors(IServiceCollection services, IConfiguration configuration)

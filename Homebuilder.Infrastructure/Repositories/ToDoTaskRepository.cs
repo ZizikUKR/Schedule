@@ -6,7 +6,7 @@ namespace Homebuilder.Infrastructure.Repositories
 {
     public class ToDoTaskRepository : BaseRepository<ToDoTask>, IToDoTaskRepository
     {
-        public ToDoTaskRepository(IConfiguration configuration) : base(configuration, "ToDoTask")
+        public ToDoTaskRepository(IConfiguration configuration) : base(configuration, "ToDoTasks")
         {
         }
     }
