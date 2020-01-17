@@ -1,0 +1,13 @@
+@import 'src/assets/sass/vars';
+
+.home-builder {
+  .title {
+    margin-bottom: 20px;
+  }
+  .board {
+    background-color: $secondBackgroundColor;
+    border: 1px solid $primaryBorderColor;
+    box-shadow: $boardShadow;
+    border-radius: 2px;
+  }
+}

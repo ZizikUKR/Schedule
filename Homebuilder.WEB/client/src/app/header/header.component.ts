@@ -13,20 +13,20 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  public navigateToProjets(): void {
-    this.router.navigateByUrl('/projects');
+  public navigateToProjects(): void {
+    // this.router.navigateByUrl('/projects');
   }
 
   public navigateToDashBoard(): void {
-    this.router.navigateByUrl('/dashboard');
+    // this.router.navigateByUrl('/dashboard');
   }
 
   public navigateToToolShelf(): void {
-    this.router.navigateByUrl('/tool-shelf');
+    // this.router.navigateByUrl('/tool-shelf');
   }
 
   public navigateToToolNetWork(): void {
-    this.router.navigateByUrl('/network');
+    // this.router.navigateByUrl('/network');
   }
 
 }

@@ -1,1 +1,38 @@
-<p>activity works!</p>
+<section class="activity">
+  <h2 class="title">Activity</h2>
+  <div class="board">
+    <header class="header">
+      <button class="button" type="button">
+        <mat-icon aria-hidden="false">search</mat-icon>
+      </button>
+      <span>search</span>
+    </header>
+    
+    <ul class="articles">
+
+      <li class="article">
+        <div class="post">
+          <div class="post-header">
+            <div class="post-logo">
+              <img src="../../../assets/images/avatar/user-placeholder.png" alt="avatar">
+            </div>
+            <div class="post-info">
+              <div class="post-title">
+                <p>John R. Doe<span class="post-event">Uploaded Photos</span></p>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+        <div class="article-action">
+          <button class="button" [ngClass]="{active: false}" type="button">
+            <mat-icon aria-hidden="false">add_circle_outline</mat-icon>
+          </button>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>

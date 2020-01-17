@@ -1,11 +1,14 @@
-import { DashboardModule } from './dashboard/dashboard.module';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { Routes, RouterModule } from '@angular/router';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { ProjectsModule } from './projects/projects.module';
-import { NetworkComponent } from './network/network.component';
+import { NetworkModule } from './network/network.module';
+import { ToolShelfModule } from './tool-shelf/tool-shelf.module';
 
 
 
@@ -26,7 +29,11 @@ const routes: Routes = [
     BrowserModule,
     DashboardModule,
     ProjectsModule,
-    RouterModule.forRoot(routes)
+    NetworkModule,
+    ToolShelfModule,
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

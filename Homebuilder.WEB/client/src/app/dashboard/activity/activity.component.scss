@@ -1,0 +1,55 @@
+@import 'src/assets/sass/vars';
+
+.activity {
+  .title {
+    margin-bottom: 20px;
+  }
+  .board {
+    background-color: $secondBackgroundColor;
+    border: 1px solid $primaryBorderColor;
+    box-shadow: $boardShadow;
+    border-radius: 2px;
+    .header {
+      border-bottom: 0.5px solid $primaryBorderColor;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      color: $secondFontColor;
+    }
+  }
+
+  .articles {
+    .article {
+      display: flex;
+      justify-content: space-between;
+
+
+      &-action {
+        display: flex;
+        align-items: center;
+        padding: 10px 40px 10px 10px;
+      }
+    }
+    
+  }
+
+  .post {
+    &-header {
+      display: flex;
+      padding: 15px;
+    }
+    
+    &-logo {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
