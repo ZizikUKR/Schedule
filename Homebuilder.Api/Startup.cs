@@ -15,7 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace Homebuilder.Api
 {
@@ -35,7 +35,7 @@ namespace Homebuilder.Api
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Homebuilder API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "Homebuilder API", Version = "v1" });
             });
             Domain.Startup.Configure(connectionString);
             ConfigureCors(services, Configuration);
