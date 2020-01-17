@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Homebuilder.Api.Middlewares;
+using Homebuilder.Domain.Repositories;
+using Homebuilder.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -80,6 +82,7 @@ namespace Homebuilder.Api
 
         private void ConfigureRepositories(IServiceCollection services)
         {
+            services.AddTransient<IToDoTaskRepository, ToDoTaskRepository>();
         }
     }
 }

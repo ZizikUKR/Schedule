@@ -6,7 +6,7 @@ namespace Homebuilder.Domain.Repositories
 {
     public interface IBaseRepository<T> where T : BaseEntity
     {
-        Task<T> Get(string id);
+        Task<T> Get(long id);
 
         Task<IEnumerable<T>> GetAll();
 

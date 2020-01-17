@@ -4,7 +4,7 @@
     {
         public static void Configure(string connectionString)
         {
-            //DbUP.Update(connectionString);
+            DbUP.Update(connectionString);
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Homebuilder.Infrastructure.Repositories
             _tableName = tableName;
         }
 
-        public async Task<T> Get(string id)
+        public async Task<T> Get(long id)
         {
             return await Connection.GetAsync<T>(id);
         }
