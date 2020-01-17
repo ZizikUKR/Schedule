@@ -103,3 +103,12 @@
     color: $white;
   }
 }
+
+.button-view {
+  text-decoration: underline;
+  color: $secondFontColor;
+  transition: color .2s;
+  &:hover {
+    color: $liteGreen;
+  }
+}

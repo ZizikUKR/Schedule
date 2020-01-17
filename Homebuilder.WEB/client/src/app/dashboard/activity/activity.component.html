@@ -2,29 +2,55 @@
   <h2 class="title">Activity</h2>
   <div class="board">
     <header class="header">
-      <button class="button" type="button">
+      <label class="search">
         <mat-icon aria-hidden="false">search</mat-icon>
-      </button>
-      <span>search</span>
+        <input class="search-input" type="search" placeholder="Search">
+      </label>
     </header>
-    
+
     <ul class="articles">
 
       <li class="article">
+        <div class="article-logo">
+          <img src="../../../assets/images/avatar/user-placeholder.png" alt="avatar">
+        </div>
         <div class="post">
-          <div class="post-header">
-            <div class="post-logo">
-              <img src="../../../assets/images/avatar/user-placeholder.png" alt="avatar">
-            </div>
-            <div class="post-info">
-              <div class="post-title">
-                <p>John R. Doe<span class="post-event">Uploaded Photos</span></p>
+          <div class="post-body">
+            <div class="post-header">
+              <div class="post-info">
+                <div class="post-title">
+                  <p>
+                    <span class="author">John R. Doe </span> 
+                    <span class="post-event">Uploaded Photos</span>
+                  </p>
+                  <div class="address">
+                    <p>365 Boyer Circle, Lafayette</p>
+                    <span class="code">#DE80090</span>
+                  </div>
+                  <p class="date">
+                    <time clas datetime="2018-07-07T13:22:00">Today at 1:22pm</time>
+                  </p>
+                </div>
               </div>
             </div>
+            <ul class="list">
+              <li class="item">
+                <img class="photo" src="../../../assets/images/picture/home.jpg" alt="img">
+              </li>
+              <li class="item">
+                <img class="photo" src="../../../assets/images/picture/home.jpg" alt="img">
+              </li>
+              <li class="item">
+                <img class="photo" src="../../../assets/images/picture/home.jpg" alt="img">
+              </li>
+              <li class="item">
+                <img class="photo" src="../../../assets/images/picture/home.jpg" alt="img">
+              </li>
+            </ul>
+            <button class="button button-view" type="button">
+              View All Photos
+            </button>
           </div>
-
-          
-
         </div>
         <div class="article-action">
           <button class="button" [ngClass]="{active: false}" type="button">
@@ -32,7 +58,6 @@
           </button>
         </div>
       </li>
-
     </ul>
   </div>
 </section>
