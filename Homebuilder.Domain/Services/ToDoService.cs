@@ -1,12 +1,9 @@
 ﻿using Homebuilder.Domain.Entities;
-using Homebuilder.Domain.Entities.Enums;
 using Homebuilder.Domain.Repositories;
 using Homebuilder.Domain.Services.Interfaces;
 using Homebuilder.Domain.Views;
 using Homebuilder.Domain.Views.Enums;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
