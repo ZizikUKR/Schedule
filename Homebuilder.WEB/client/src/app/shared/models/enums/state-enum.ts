@@ -1,7 +1,7 @@
 
 export enum StateEnum {
     None,
-    HighPrice,
-    Medium,
-    Final
+    HighPrice = 'High Price',
+    Medium = 'Medium',
+    Final = 'Final'
 }
