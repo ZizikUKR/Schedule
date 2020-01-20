@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./activity.component.scss']
 })
 export class ActivityComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleViewDropdawn(event) {
+    event.target.closest('.dropdown').classList.toggle("open");
   }
 
 }

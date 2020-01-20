@@ -108,6 +108,7 @@
   text-decoration: underline;
   color: $secondFontColor;
   transition: color .2s;
+  font-size: 11px;
   &:hover {
     color: $liteGreen;
   }
