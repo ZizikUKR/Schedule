@@ -33,9 +33,6 @@ export class HomeBuilderComponent implements OnInit {
       return HomeBuilderConstants.chipColorGreen;
     }
   }
-  // public getEnumValue(state: number): string {
-  //   return StateEnum[state];
-  // }
 
   public updateStatus(item: ToDoTaskGetAllViewItem) {
     const updatedTodo: UpdateToDoView = {
