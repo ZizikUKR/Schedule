@@ -58,6 +58,11 @@ namespace Homebuilder.WEB
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "catch-all",
+                    template: "{*url}",
+                    defaults: new { controller = "Home", action = "RedirectIndex" }
+                );
             });
         }
     }
