@@ -9,7 +9,6 @@ namespace Homebuilder.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    //[Produces("application/json")]
     public class ToDoController : ControllerBase
     {
         private readonly IToDoService _toDoService;
@@ -19,7 +18,6 @@ namespace Homebuilder.Api.Controllers
         }
 
         [HttpGet]
-        //[ProducesResponseType(typeof(GetAllToDoView), (int)HttpStatusCode.OK)]
         public async Task<ActionResult> GetAll()
         {
             var result =await _toDoService.GetAll();
@@ -27,7 +25,6 @@ namespace Homebuilder.Api.Controllers
         }
 
         [HttpPut]
-        [ProducesResponseType(typeof(bool), (int)HttpStatusCode.OK)]
         public async Task<ActionResult> Update([FromBody] UpdateToDoView view)
         {
             if (view == null)
