@@ -23,7 +23,7 @@ namespace Homebuilder.Domain.Services
         {
             var existingToDos = await _toDoTaskRepository.GetAll();
             var result = new GetAllToDoView();
-            result.ToDos = existingToDos.Select(p => MapToDoTaskToView(p)).ToList();
+            result.ToDos = existingToDos.Select(p => MapToDoTaskToView(p)).OrderBy(p=>p.ToDo).ToList();
 
             return result;
         }
