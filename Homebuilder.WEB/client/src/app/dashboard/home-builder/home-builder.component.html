@@ -12,30 +12,30 @@
         </button>
       </div>
     </header>
-    <ul class="list">
-      <li class="item">
+    <ul class="list" *ngIf="toDoList.length > 0">
+      <li class="item" *ngFor="let item of toDoList">
         <div class="item-section">
-          <button class="button" [ngClass]="{active: false}" type="button">
+          <button (click)="updateStatus(item)" class="button" [ngClass]="{active: item?.isComppleted}" type="button">
             <mat-icon aria-hidden="false">check_circle_outline</mat-icon>
           </button>
         </div>
         <div class="item-section section-info">
-          <p class="item-title">Buy Windows</p>
-          <p class="item-description">#DE 8009 Description lorem ipsum lorem ipsum</p>
+          <p class="item-title">{{item?.toDo}}</p>
+          <p class="item-description">{{item?.description}}</p>
         </div>
         <div class="item-section ">
-          <p>ABC</p>
-          <p class="chips" [ngClass]='{colorRed: true, colorYellow: false, colorGreen: false}'>High Price</p>
+          <p>{{item?.information}}</p>
+          <p class="chips" [ngClass]='getChipsColour(item?.state)'>
+            {{getEnumValue(item?.state)}}</p>
         </div>
         <div class="item-section">
           <div class="avatar">
             <img src="../../../assets/images/avatar/avatar.png" alt="avatar">
           </div>
         </div>
-        
+
       </li>
     </ul>
-    
+
   </div>
 </section>
-

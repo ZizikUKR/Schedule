@@ -6,6 +6,8 @@ using Homebuilder.Api.Middlewares;
 using Homebuilder.Domain.Config;
 using Homebuilder.Domain.Providers;
 using Homebuilder.Domain.Repositories;
+using Homebuilder.Domain.Services;
+using Homebuilder.Domain.Services.Interfaces;
 using Homebuilder.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,6 +40,7 @@ namespace Homebuilder.Api
                 c.SwaggerDoc("v1", new Info { Title = "Homebuilder API", Version = "v1" });
             });
             Domain.Startup.Configure(connectionString);
+            services.AddTransient<IToDoService, ToDoService>();
             ConfigureCors(services, Configuration);
             ConfigureRepositories(services);
         }

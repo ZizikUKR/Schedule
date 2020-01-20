@@ -9,7 +9,7 @@ namespace Homebuilder.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
-    [Produces("application/json")]
+    //[Produces("application/json")]
     public class ToDoController : ControllerBase
     {
         private readonly IToDoService _toDoService;
@@ -19,7 +19,7 @@ namespace Homebuilder.Api.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(GetAllToDoView), (int)HttpStatusCode.OK)]
+        //[ProducesResponseType(typeof(GetAllToDoView), (int)HttpStatusCode.OK)]
         public async Task<ActionResult> GetAll()
         {
             var result =await _toDoService.GetAll();

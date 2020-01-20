@@ -1,12 +1,14 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.Runtime.Serialization;
 
 namespace Homebuilder.Domain.Views.Enums
 {
-    [JsonConverter(typeof(StringEnumConverter))]
+   // [JsonConverter(typeof(StringEnumConverter))]
     public enum StateEnumView
     {
         None = 0,
+        [EnumMember(Value = "High Price")]
         HighPrice = 1,
         Medium = 2,
         Final = 3

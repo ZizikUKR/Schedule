@@ -38,7 +38,7 @@ namespace Homebuilder.Domain.Services
             {
                 throw new Exception("TodoTask dosen't exist");
             }
-            MapViewToEntity(toDoTask, view);
+            toDoTask.IsComppleted = view.IsComppleted;
             await _toDoTaskRepository.Update(toDoTask);
 
             return true;
@@ -63,20 +63,6 @@ namespace Homebuilder.Domain.Services
 
             return result;
         }
-
-        private void MapViewToEntity(ToDoTask entity, UpdateToDoView view)
-        {
-            if(!Enum.TryParse(view.State.ToString(),out State state))
-            {
-                throw new Exception("Can't parse ToDo State");
-            }
-            entity.State = state;
-            entity.Information = view.Information;
-            entity.IsComppleted = view.IsComppleted;
-            entity.ToDo = view.ToDo;
-            entity.Description = view.Description;
-        }
-
         #endregion Mapping 
     }
 }

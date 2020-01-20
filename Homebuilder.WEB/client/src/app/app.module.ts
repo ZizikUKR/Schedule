@@ -9,6 +9,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
 import { ProjectsModule } from './projects/projects.module';
 import { NetworkModule } from './network/network.module';
 import { ToolShelfModule } from './tool-shelf/tool-shelf.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -31,6 +32,7 @@ const routes: Routes = [
     ProjectsModule,
     NetworkModule,
     ToolShelfModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     MatIconModule
