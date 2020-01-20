@@ -14,9 +14,6 @@ import { HomeBuilderConstants } from 'src/app/shared/models/home-builder.constan
 export class HomeBuilderComponent implements OnInit {
   public subscription: Subscription;
   public toDoList: ToDoTaskGetAllViewItem[] = [];
-  private chipColorRed = 'colorRed';
-  private chipColorYellow = 'colorYellow';
-  private chipColorGreen = 'colorGreen';
   constructor(private todoService: ToDoService) {
   }
 
