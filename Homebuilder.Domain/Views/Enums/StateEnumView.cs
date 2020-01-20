@@ -1,10 +1,7 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace Homebuilder.Domain.Views.Enums
 {
-   // [JsonConverter(typeof(StringEnumConverter))]
     public enum StateEnumView
     {
         None = 0,

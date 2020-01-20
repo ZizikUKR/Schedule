@@ -12,7 +12,7 @@ export class ActivityComponent implements OnInit {
   }
 
   toggleViewDropdawn(event) {
-    event.target.closest('.dropdown').classList.toggle("open");
+    event.target.closest('.dropdown').classList.toggle('open');
   }
 
 }
