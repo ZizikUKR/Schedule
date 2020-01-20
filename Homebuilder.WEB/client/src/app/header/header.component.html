@@ -1,12 +1,20 @@
 <header class="header">
+  <div class="container-template">
     <a class="logo" routerLink="/">
       <img src="./../../assets/images/logo/logo.png" alt="logo">
     </a>
-    <nav class="nav"> 
-      <a routerLink="dashboard" routerLinkActive="active" class="button button-nav" type="button" (click)="navigateToDashBoard()">DashBoard</a>
-      <a routerLink="projects" routerLinkActive="active" class="button button-nav" [ngClass]="{notification: true}" type="button" (click)="navigateToProjects()" >Projects</a>
-      <a routerLink="tool-shelf" routerLinkActive="active" class="button button-nav" [ngClass]="{notification: true}" type="button" (click)="navigateToToolShelf()">ToolShelf</a>
-      <a routerLink="network" routerLinkActive="active" class="button button-nav" type="button" (click)="navigateToToolNetWork()">NetWork</a>
+    <nav class="nav">
+      <button class="button button-nav-menu" type="button" (click)="toggleViewNavMenu($event)" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu">
+        <a routerLink="dashboard" routerLinkActive="active" class="button button-nav" type="button" (click)="navigateToDashBoard()">DashBoard</a>
+        <a routerLink="projects" routerLinkActive="active" class="button button-nav" [ngClass]="{notification: true}" type="button" (click)="navigateToProjects()" >Projects</a>
+        <a routerLink="tool-shelf" routerLinkActive="active" class="button button-nav" [ngClass]="{notification: true}" type="button" (click)="navigateToToolShelf()">ToolShelf</a>
+        <a routerLink="network" routerLinkActive="active" class="button button-nav" type="button" (click)="navigateToToolNetWork()">NetWork</a>
+      </div>
     </nav>
     <div class="section">
       <div class="action">
@@ -25,4 +33,5 @@
         <img src="./../../assets/images/avatar/avatar.png" alt="avatar">
       </div>
     </div>
+  </div>  
 </header>

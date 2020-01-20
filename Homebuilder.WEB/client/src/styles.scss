@@ -34,6 +34,5 @@ $angular-theme: mat-light-theme($angular-primary, $angular-accent, $angular-warn
 @import './assets/sass/reset';
 @import './assets/sass/fonts';
 
+@import './assets/sass/template';
 @import './assets/sass/button';
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

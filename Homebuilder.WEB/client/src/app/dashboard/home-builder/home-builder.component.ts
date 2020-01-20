@@ -19,18 +19,18 @@ export class HomeBuilderComponent implements OnInit {
 
   ngOnInit() {
     this.getToDoList();
-    timer(0, 50000).subscribe(() => this.getToDoList());
+    timer(0, 5000).subscribe(() => this.getToDoList());
   }
 
   public getChipsColour(state: number): string {
     if (StateEnum.Final === state) {
-      return HomeBuilderConstants.chipColorRed;
+      return HomeBuilderConstants.chipColorGreen;
     }
     if (StateEnum.HighPrice === state) {
-      return HomeBuilderConstants.chipColorYellow;
+      return HomeBuilderConstants.chipColorRed;
     }
     if (StateEnum.Medium === state) {
-      return HomeBuilderConstants.chipColorGreen;
+      return HomeBuilderConstants.chipColorYellow;
     }
   }
   public getEnumValue(state: number): string {

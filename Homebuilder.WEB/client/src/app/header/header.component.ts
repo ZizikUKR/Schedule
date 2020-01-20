@@ -13,6 +13,10 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  toggleViewNavMenu(event) {
+    event.target.closest(".nav").classList.toggle('open');
+  }
+
   public navigateToProjects(): void {
     // this.router.navigateByUrl('/projects');
   }
