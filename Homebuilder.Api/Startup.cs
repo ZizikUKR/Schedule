@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Homebuilder.Api.Middlewares;
+﻿using Homebuilder.Api.Middlewares;
 using Homebuilder.Domain.Config;
 using Homebuilder.Domain.Providers;
 using Homebuilder.Domain.Repositories;
@@ -11,13 +7,13 @@ using Homebuilder.Domain.Services.Interfaces;
 using Homebuilder.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
+using System;
+using System.Linq;
 
 namespace Homebuilder.Api
 {
@@ -46,7 +42,7 @@ namespace Homebuilder.Api
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory,IServiceProvider serviceProvider)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {

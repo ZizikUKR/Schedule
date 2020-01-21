@@ -2,7 +2,6 @@
 using Homebuilder.Domain.Views;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Net;
 using System.Threading.Tasks;
 
 namespace Homebuilder.Api.Controllers
@@ -20,7 +19,7 @@ namespace Homebuilder.Api.Controllers
         [HttpGet]
         public async Task<ActionResult> GetAll()
         {
-            var result =await _toDoService.GetAll();
+            GetAllToDoView result = await _toDoService.GetAll();
             return Ok(result);
         }
 
@@ -31,7 +30,7 @@ namespace Homebuilder.Api.Controllers
             {
                 throw new Exception("Invalid model");
             }
-            var result =  await _toDoService.Update(view);
+            bool result = await _toDoService.Update(view);
             return Ok(result);
         }
     }
