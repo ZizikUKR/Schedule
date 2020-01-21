@@ -26,7 +26,8 @@
         <div class="item-section ">
           <p>{{item?.information}}</p>
           <p class="chips" [ngClass]='getChipsColour(item?.state)'>
-            {{getEnumValue(item?.state)}}</p>
+            {{item.state}}
+          </p>
         </div>
         <div class="item-section">
           <div class="avatar">

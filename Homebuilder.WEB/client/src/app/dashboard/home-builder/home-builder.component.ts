@@ -22,7 +22,7 @@ export class HomeBuilderComponent implements OnInit {
     timer(0, 5000).subscribe(() => this.getToDoList());
   }
 
-  public getChipsColour(state: number): string {
+  public getChipsColour(state: string): string {
     if (StateEnum.Final === state) {
       return HomeBuilderConstants.chipColorGreen;
     }
@@ -32,9 +32,6 @@ export class HomeBuilderComponent implements OnInit {
     if (StateEnum.Medium === state) {
       return HomeBuilderConstants.chipColorYellow;
     }
-  }
-  public getEnumValue(state: number): string {
-    return StateEnum[state];
   }
 
   public updateStatus(item: ToDoTaskGetAllViewItem) {

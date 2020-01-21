@@ -5,11 +5,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Homebuilder.WEB.Models;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Homebuilder.WEB.Controllers
 {
     public class HomeController : Controller
     {
+        public IHostingEnvironment _hostingEnvironment { get; }
+        public HomeController(IHostingEnvironment hostingEnvironment)
+        {
+            _hostingEnvironment = hostingEnvironment;
+        }
         public IActionResult Index()
         {
             return View();
@@ -25,5 +32,13 @@ namespace Homebuilder.WEB.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpGet]
+        public IActionResult RedirectIndex()
+        {
+            return new PhysicalFileResult(
+                Path.Combine(_hostingEnvironment.WebRootPath, "index.html"), "text/html"
+            );
+        }   
     }
 }
