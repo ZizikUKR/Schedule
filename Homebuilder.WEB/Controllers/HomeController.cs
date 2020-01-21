@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Homebuilder.WEB.Models;
-using System.IO;
+﻿using Homebuilder.WEB.Models;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+using System.IO;
 
 namespace Homebuilder.WEB.Controllers
 {
@@ -39,6 +35,6 @@ namespace Homebuilder.WEB.Controllers
             return new PhysicalFileResult(
                 Path.Combine(_hostingEnvironment.WebRootPath, "index.html"), "text/html"
             );
-        }   
+        }
     }
 }

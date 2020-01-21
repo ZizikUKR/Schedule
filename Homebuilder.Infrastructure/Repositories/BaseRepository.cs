@@ -64,8 +64,8 @@ namespace Homebuilder.Infrastructure.Repositories
         {
             var sql = string.Empty;
             var columns = GetColumns();
-            var stringOfColumns = string.Join(", ", columns.Where(p=>p != "id"));
-            var stringOfParameters = string.Join(", ", columns.Where(p=>p!="id").Select(e => "@" + e));
+            var stringOfColumns = string.Join(", ", columns.Where(p => p != "id"));
+            var stringOfParameters = string.Join(", ", columns.Where(p => p != "id").Select(e => "@" + e));
             sql += $"insert into {_tableName} ({stringOfColumns}) values ({stringOfParameters});";
             await Connection.ExecuteAsync(sql, entity);
         }

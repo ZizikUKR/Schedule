@@ -7,9 +7,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  toggleView: boolean = false;
 
   constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  toggleViewMenu() {
+    this.toggleView = !this.toggleView;
   }
 }
