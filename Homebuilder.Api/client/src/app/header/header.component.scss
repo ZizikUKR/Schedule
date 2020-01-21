@@ -2,6 +2,7 @@
 .header {
   background-color: $secondBackgroundColor;
   box-shadow: $headerShadow;
+  position: relative;
 
   .container-template {
     display: flex;
@@ -71,12 +72,11 @@
 
 .nav {
   flex-grow: 1;
-  position: relative;
   align-self: stretch;
 
   &-menu {
-    position: fixed;
-    top: 80px;
+    position: absolute;
+    top: 100%;
     left: 50%;
     transform: translateX(-50%);
     
@@ -107,7 +107,7 @@
       justify-content: center;
       align-items: stretch;
       .button-nav {
-        padding: 0;
+        padding: 10px;
         & + .button-nav {
           margin: 0 0 0 40px;
         }
