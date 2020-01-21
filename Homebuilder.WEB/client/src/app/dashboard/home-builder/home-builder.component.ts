@@ -19,7 +19,7 @@ export class HomeBuilderComponent implements OnInit {
 
   ngOnInit() {
     this.getToDoList();
-    timer(0, 50000).subscribe(() => this.getToDoList());
+    timer(0, 5000).subscribe(() => this.getToDoList());
   }
 
   public getChipsColour(state: string): string {
