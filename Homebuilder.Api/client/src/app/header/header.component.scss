@@ -1,0 +1,61 @@
+@import 'src/assets/sass/vars';
+.header {
+  background-color: $secondBackgroundColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 13px;
+
+  box-shadow: $headerShadow;
+
+  .logo {
+    display: block;
+    max-width: 50px;
+  }
+
+  .nav {
+    align-self: stretch;
+    margin: -10px;
+  }
+
+
+  .section {
+    display: flex;
+    .action {
+      display: flex;
+      align-items: center;
+      .button {
+        display: block;
+        width: 40px;
+        margin: 0 10px 0 0;
+        .mat-icon {
+          font-size: 30px;
+        }
+        &.notification {
+          position: relative;
+          .counter {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            background-color: $blue;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            border: 1px solid $white;
+            color: $white;
+            font-family: $secondFontFamily;
+            font-size: 9px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+    .avatar {
+      max-width: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+
+}
