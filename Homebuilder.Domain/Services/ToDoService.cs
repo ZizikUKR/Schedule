@@ -4,6 +4,7 @@ using Homebuilder.Domain.Services.Interfaces;
 using Homebuilder.Domain.Views;
 using Homebuilder.Domain.Views.Enums;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,20 +19,20 @@ namespace Homebuilder.Domain.Services
         }
 
         #region Public Methods
-        
+
         public async Task<GetAllToDoView> GetAll()
         {
-            var existingToDos = await _toDoTaskRepository.GetAll();
+            IEnumerable<ToDoTask> existingToDos = await _toDoTaskRepository.GetAll();
             var result = new GetAllToDoView();
-            result.ToDos = existingToDos.Select(p => MapToDoTaskToView(p)).OrderBy(p=>p.ToDo).ToList();
+            result.ToDos = existingToDos.Select(p => MapToDoTaskToView(p)).OrderBy(p => p.ToDo).ToList();
 
             return result;
         }
 
         public async Task<bool> Update(UpdateToDoView view)
         {
-            var toDoTask = await _toDoTaskRepository.Get(view.Id);
-            if(toDoTask is null)
+            ToDoTask toDoTask = await _toDoTaskRepository.Get(view.Id);
+            if (toDoTask is null)
             {
                 throw new Exception("TodoTask dosen't exist");
             }
