@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Homebuilder.Api.Middlewares;
 using Homebuilder.Domain.Config;
 using Homebuilder.Domain.Providers;
@@ -11,12 +9,10 @@ using Homebuilder.Domain.Services.Interfaces;
 using Homebuilder.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Homebuilder.Api
@@ -78,12 +74,12 @@ namespace Homebuilder.Api
             app.UseSpa(spa =>
             {
                 spa.Options.SourcePath = "wwwroot";
-#if Debug
+                #if Debug
                 if (env.IsDevelopment())
                 {
                     spa.UseProxyToSpaDevelopmentServer("http://localhost:4200");
                 }
-#endif
+                #endif
             });
             InitializerDB.Initialize();
         }
