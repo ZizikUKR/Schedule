@@ -24,13 +24,13 @@ export class HomeBuilderComponent implements OnInit {
 
   public getChipsColour(state: string): string {
     if (StateEnum.Final === state) {
-      return HomeBuilderConstants.chipColorRed;
+      return HomeBuilderConstants.chipColorGreen;
     }
     if (StateEnum.HighPrice === state) {
-      return HomeBuilderConstants.chipColorYellow;
+      return HomeBuilderConstants.chipColorRed;
     }
     if (StateEnum.Medium === state) {
-      return HomeBuilderConstants.chipColorGreen;
+      return HomeBuilderConstants.chipColorYellow;
     }
   }
 
